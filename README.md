@@ -20,8 +20,12 @@ See **_commands.txt_** and **_pip_freeze.txt_** for more details if interested.
 
 ## Note
 
-There are Pyton script files with different levels of complexity as I improve and develop my code.
+There are Pyton script files with different levels of complexity as I improved and developed my code.
 
-The master has the final versions.
+Basic examples branch- first step should be to run **ollama_run_stop.py** and then the selected model file.
 
-The branches are left unmerged in the master, so that the files of these different levels can be easily distinguished.
+Improved examples branch - added a function and "try... except" in it, but it is also valid to run **ollama_run_stop.py** first and then the selected model fte file.
+
+The master branch has the final versions.
+
+The branches are left unmerged into the master, so that the files of these different levels can be easily distinguished.
