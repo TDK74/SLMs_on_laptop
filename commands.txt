@@ -1,0 +1,108 @@
+# Download Ollama and install it
+https://ollama.com/download
+
+
+# Create an working directory for the SLMs (a drive with enough/more free space)
+D:\Learning\SLM or D:\SLMs (for example)
+
+
+# Change to the working directory for the SLMs and type in the path bar (D:\Learning\SLM)
+powershell
+
+
+# Check (in PowerShell or cmd) if Ollama is in the system PATH and working
+ollama --version
+echo $env:PATH
+# to sort only Ollama if too many lines
+$env:PATH -split ";" | Select-String "Ollama"
+
+
+# Create virtual environment
+python --version
+# for example as a name: slm+python 3.11
+python -m venv slmpy311
+
+
+# Activate the virtual environment (in PowerShell)
+slmpy311\Scripts\Activate.ps1
+
+
+# Check pip version
+pip --version
+
+
+# Upgrade it to the latest version if necessary
+python -m ensurepip --upgrade
+or
+python -m pip install --upgrade pip
+
+
+# Install packages from requirements.txt
+# Might need to install ollama and ollama-python manually due to conflicting dependencies
+# if so, I recommend to install first ollama-python and then ollama
+pip install -r requirements.txt
+
+
+# Check for available commands for Ollama:
+ollama --help
+Large language model runner
+
+Usage:
+  ollama [flags]
+  ollama [command]
+
+Available Commands:
+  serve       Start ollama
+  create      Create a model from a Modelfile
+  show        Show information for a model
+  run         Run a model
+  stop        Stop a running model
+  pull        Pull a model from a registry
+  push        Push a model to a registry
+  list        List models
+  ps          List running models
+  cp          Copy a model
+  rm          Remove a model
+  help        Help about any command
+
+Flags:
+  -h, --help      help for ollama
+  -v, --version   Show version information
+
+Use "ollama [command] --help" for more information about a command.
+
+
+# Run ollama and the desired slm model from the working folder
+# Might/will download the model at the default location, usually C: drive
+ollama run phi3.5:3.8b
+ollama run qwen2.5:0.5b
+ollama run gemma2:2b
+ollama run mistral:7b
+...
+
+
+# Check for available commands after running of the model:
+>>> /?
+Available Commands:
+  /set            Set session variables
+  /show           Show model information
+  /load <model>   Load a session or model
+  /save <model>   Save your current session
+  /clear          Clear session context
+  /bye            Exit
+  /?, /help       Help for a command
+  /? shortcuts    Help for keyboard shortcuts
+
+Use """ to begin a multi-line message.
+
+
+# To measure response time etc.
+/set verbose
+
+
+# Enter any prompt messages:
+...
+
+
+# Use /bye or Ctrl+d to exit the model
+/bye
