@@ -4,7 +4,7 @@ import subprocess
 
 def get_ollama_models():
     """
-    Retrieves a list of available Olama models.
+    Retrieves a list of available Ollama models.
 
     Returns:
         list: A list of model names, or an empty list on error.
