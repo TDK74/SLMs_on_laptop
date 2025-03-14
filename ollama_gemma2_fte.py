@@ -3,7 +3,7 @@ from ollama import Client
 
 def main():
     """
-    Send user request to the pre-chosen Ollama model.
+    Sends user's request to the pre-chosen Ollama model.
     """
     input_prompt = input("Please, enter your prompt (in the terminal): \n")
     print("Waiting for SLM's response... \n")
