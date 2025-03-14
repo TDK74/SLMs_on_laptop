@@ -19,7 +19,7 @@ def handle_prompt(client, selected_model, input_prompt):
 
 def main():
     """
-    Send user request to the chosen Ollama model.
+    Send the user's request to the chosen Ollama model.
     """
     client = Client(host = 'http://localhost:11434') # Create the client
     models = get_ollama_models()
