@@ -6,7 +6,7 @@ def main():
     Send user request to the pre-chosen Ollama model.
     """
     input_prompt = input("Please, enter your prompt (in the terminal): \n")
-    print("Waiting foor SLM's response... \n")
+    print("Waiting for SLM's response... \n")
 
     try:
         client = Client(host = 'http://localhost:11434')
