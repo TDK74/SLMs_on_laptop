@@ -1,5 +1,5 @@
-# SLMs_on_laptop
-Run Small Language Models (Gemma2 2b, Llama 3.1 8b, Mistral 7B, phi3.5 3.8b, Qwen2.5 0.5b) on a laptop.
+# SLMs on laptop
+Run Small Language Models (Gemma2 2b, Llama 3.1 8b, Mistral 7B, phi3.5 3.8b, Qwen2.5 0.5b) on laptop.
 
 * Based on the guide from this site:
 
@@ -18,11 +18,11 @@ There were no Python script examples, but I created several, so that I could dow
 
 See **_commands.txt_** and **_pip_freeze.txt_** for more details if interested.
 
-## Note
+## Notes
 
 There are Pyton script files with different levels of complexity as I improved and developed my code.
 
-Basic examples branch- first step should be to run **ollama_run_stop.py** and then the selected model file.
+Basic examples branch - first step should be to run **ollama_run_stop.py** and then the selected model file.
 
 Improved examples branch - added a function and "try... except" in it, but it is also valid to run **ollama_run_stop.py** first and then the selected model fte file.
 
