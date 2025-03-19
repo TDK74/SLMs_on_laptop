@@ -14,7 +14,7 @@ There were no Python script examples, but I created several, so that I could dow
 * Operating System: Windows 10 Pro x64
 * Software: Python 3.10, 3.11 (virtual env - workspace), 3.12 (Anaconda)
 * Environment: slmpy311 (virtual env)
-* SL models: gemma2-2b-q4, llama3.1-8b-q4, mistral-7B-q4, phi3.5-3.8b-q4, qwen2.5-0.5b-q4
+* SLModels: gemma2-2b-q4, llama3.1-8b-q4, mistral-7B-q4, phi3.5-3.8b-q4, qwen2.5-0.5b-q4
 
 See **_commands.txt_** and **_pip_freeze.txt_** for more details if interested.
 
